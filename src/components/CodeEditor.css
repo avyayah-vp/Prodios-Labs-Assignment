@@ -1,0 +1,71 @@
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Set a fixed width for the container */
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.code-input {
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 5ch); /* Adjust width to account for line numbers */
+  border: none;
+  color: transparent;
+  caret-color: rgb(255, 255, 255);
+  background: transparent;
+  z-index: 1;
+  font-size: 16px;
+  padding: 10px;
+  outline: none;
+  font-family: monospace; /* Match the font-family with the highlighted area */
+  line-height: 1.5; /* Match the line-height with the highlighted area */
+  top: 0;
+  left: 5ch; /* Adjust left to account for line numbers */
+}
+
+.code-output {
+  white-space: pre-wrap;
+  padding: 10px;
+  font-size: 16px;
+  font-family: monospace; /* Match the font-family with the textarea */
+  line-height: 1.5; /* Match the line-height with the textarea */
+  position: relative;
+  z-index: 0;
+  background: #2d2d2d; /* Background color matching the theme */
+  color: #fff; /* Text color matching the theme */
+  min-height: 100px; /* Set a minimum height */
+}
+
+.line-number {
+  display: inline-block;
+  width: 5ch;
+  text-align: right;
+  user-select: none;
+  opacity: 0.3;
+  font-family: monospace;
+  padding-right: 10px;
+}
+.selection {
+    margin-bottom: 16px;
+    text-align: center; /* Center the dropdowns */
+  }
+  
+  .selection select {
+    font-size: 16px; /* Increase font size */
+    padding: 8px 12px; /* Add padding */
+    border-radius: 8px; /* Rounded borders */
+    border: 1px solid #ccc; /* Border color */
+    margin: 0 10px; /* Space between selects */
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  }
+  
+  .selection select:focus {
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Add shadow on focus */
+  }
