@@ -25,7 +25,7 @@ h1 {
   font-family: monospace; /* Match the font-family with the highlighted area */
   line-height: 1.5; /* Match the line-height with the highlighted area */
   top: 0;
-  left: 5ch; /* Adjust left to account for line numbers */
+  left: 5.9ch; /* Adjust left to account for line numbers */
 }
 
 .code-output {
